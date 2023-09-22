@@ -560,7 +560,7 @@ fn main() -> Result<(), String> {
         let stop = format!("Stop [{unit_str}]");
         let size = format!("Size [{unit_str}]");
         let fs = "Filesystem";
-        println!("{nr:^12} | {start:^12} | {stop:^12} | {size:^12} | {fs:^12}");
+        println!("\n{nr:^12} | {start:^12} | {stop:^12} | {size:^12} | {fs:^12}");
         for (i, entry) in mbr.partition_table.entries.iter().enumerate() {
             if let Some(e) = entry {
                 println!(
